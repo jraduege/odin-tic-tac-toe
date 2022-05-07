@@ -1,0 +1,28 @@
+:root {
+    box-sizing: border-box;
+}
+
+.container {
+    background:white;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.board {
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.spot {
+    background: white;
+    display:grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    font-size: 25vw;
+}
