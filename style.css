@@ -26,3 +26,7 @@
     align-items: center;
     font-size: 25vw;
 }
+
+.hidden {
+    visibility: hidden;
+}
