@@ -9,6 +9,29 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
+    <div class="formarea">
+        <form action="javascript:displayControl.startGame()">
+            <lable for="player1" class="player1-label">Player One:</lable>
+            <input type="text" class="player1-name" name="player1">
+            <label for="player2" class="player2-label">Player Two:</label>
+            <input type="text" class="player2-name" name="player2">
+            <fieldset class="setfield">
+                <legend>Who should go first?</legend>
+                <input type="radio" name="first" id="p1first" value="Player One">
+                <label for="p1first" class="first-label">Player One</label>
+                <input type="radio" name="first" id="p2first" value="Player Two">
+                <label for="p2first" class="first-label">Player Two</label>
+            </fieldset>
+            <fieldset class="setfield">
+                <legend>Marker for first move:</legend>
+                <input type="radio" name="marker-choice" id="exes" value="X">
+                <label for="exes" class="marker-label">X</label>
+                <input type="radio" name="marker-choice" id="ohs" value="O">
+                <label for="ohs" class="marker-label">O</label>
+            </fieldset>
+            <button class="start-button" type="submit">Start Game</button>
+        </form>
+    </div>
     <div class="container">
         <div class="board">
             <div class="spot" data-key=0>

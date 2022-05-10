@@ -2,6 +2,19 @@
     box-sizing: border-box;
 }
 
+.formarea {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+fieldset {
+    border: 0p
+}
+
+legend {
+    grid-column: 1/3;
+}
+
 .container {
     background:white;
     padding: 100px;
