@@ -4,9 +4,7 @@ const gameBoard = (() => {
     let started=false;
 
     const spotOpen = (position) => {
-        console.log("Spot open called");
         let returnValue = (boardArray[position] == "U") ? true : false;
-        console.log(returnValue);
         return returnValue;
     };
 
@@ -53,10 +51,14 @@ const players = (() => {
         playerArray.push({playerNumber, playerName, marker, firstMove});
     };
 
-    const whichPlayer = (marker) => {
+    const whichPlayer = (markerQuery) => {
+        let output;
         playerArray.forEach((player) => {
-            if (player.marker==marker) {return player.playerName};
+            if (player.marker==markerQuery) {
+                output = player.playerName;
+            };
         });
+        return output;
     }
     
     const logPlayers = () => {
