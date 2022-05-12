@@ -43,3 +43,9 @@ legend {
 .hidden {
     visibility: hidden;
 }
+
+.status {
+    color: red;
+    font-size: 3rem;
+    justify-content: center;
+}
